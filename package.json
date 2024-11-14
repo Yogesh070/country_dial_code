@@ -1,8 +1,9 @@
 {
   "name": "country_dial_code",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A country code dial code helper",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest"
   },
