@@ -7538,10 +7538,12 @@ const countries = [
   const getCountryByCode = (code) => countries.find(country => country.code === code);
   const getCountryByDialCode = (dialCode) => countries.find(country => country.dialCode === dialCode);
   const getLocalizedName = (country, languageCode) => country.nameTranslations[languageCode] || country.name;
+  const getDialCodeByCountryCode = (code) => countries.find(country => country.code === code).dialCode;
   
   export {
     countries,
     getCountryByCode,
     getCountryByDialCode,
-    getLocalizedName
+    getLocalizedName,
+    getDialCodeByCountryCode,
   };
